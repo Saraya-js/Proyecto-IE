@@ -21,19 +21,23 @@ function draw() {
     y=y+0.5;
     c=c+0.5;
     d=d+0.5;
+    a=a-0.5;
+    b=b-0.5;
   } else {
-     x=100;
+    x=100;
     y=100;
     c=247;
     d=247;
+    a=150;
+    b=150;
   }
   strokeWeight(2);
 
   ellipse(width/2,height/2,100,100);
   strokeWeight(6);
   stroke(255,255,255);
-  point(200,a);
-  point(b,200);
+  line(200,150,200,a);
+  line(150,200,b,200);
   line(250,200,c,200);
   line(200,250,200,d);  
   
