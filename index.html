@@ -9,47 +9,84 @@
 
 </head>
 <body>
-    <div class="contenido">
-        <h1> Juega con la forma</h1>
-        <div class="principal">
-            <article>
+    <div class="contenido"> 
+        <div><h1> Juega con la forma</h1></div>
+            <div class="principal">
                 <p>¡Bienvenidos!
                     Esta web te invita a explorar con las formas creando mandalas y patrones con un
                      caleidoscopio virtual, mueve las perillas y obtendrás creaciones nuevas y variadas.
                      El sketch ha sido creado con la librería p5js, incorporando sliders para modificar
-                     los colores en RGB y el tamaño el pincel.
+                     los colores en RGBA y el tamaño el pincel.
                 </p>
-            </article>
-        </div>
+                <br>
+            </div>
+            <br>
+
+            <div class="secundario">
+                <h2>Intrucciones de uso</h2>
+                <p> El sketch dispone de diversos botones, puedes ampliar la pantalla con el botón de pantalla
+                    completa. Cambia los valores de color rojo con la perilla R, los de color azul con la perilla
+                    B y los de color verde con la perilla G. Si necesitas color negro disminuye las tres perillas
+                    (RGB) al mínimo y si necesitas color blanco aumenta las tres perillas al máximo. Varía la 
+                    trasparencia de color con la perilla alpha. Genera un trazo con un patrón de círculos  con el 
+                    botón círculos, si necesitas volver a la línea presiona el boton resetear círculos. Por 
+                    último si te ha gustado tu creación Puedes guardarla como imagen en formato .jpg con el botón
+                    save.   
+                 </p>
+            </div>
+            <br>
         <div class="row">
                 <div class="column">
                      <img src="design/design (13).jpg" alt="ejemplo de patrón" height="220">
                      <img src="design/design (6).jpg" alt="ejemplo patrón" height="220">
                      <img src="design/design (8).jpg" alt="ejemplo patrón" height="220">
                 </div>
-                
-        <div>   
-            <script src="sketch.js"></script>
-
-        </div>   
+        </div>       
+            <br>
              
-        <br>
         <div class="sketches">
-            <h2> Proceso exploratorio
-
-            </h2>
+            <h2> Proceso exploratorio</h2>
             <ul> 
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/Epsg3NHP8">sketch 1</a></li>
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/mwAYp5nqD">sketch 2</a></li>
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/tCuTN5ia8">sketch 3</a></li>
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/lzr-yYjuY">sketch 4</a></li>
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/EZPEefljG">sketch 5</a></li>
-
                 <li><a href="https://editor.p5js.org/soledad.arayau/present/tCuTN5ia8">sketch 3</a></li>
-        </ul>
-    </div>
-       
-
+            </ul>
+        </div>
+        <div>
+            <script src="sketch.js"></script>
+        </div> 
+        <br>  
+        <div class="botones">
+            <script src="sketch.js"></script>
+            <button type="button" id="save" onclick="saveFile()">Save</button>
+            <button type="button" id="clear" onclick="clearScreen()">clear</button>
+            <button type="button" id="fullscree" onclick="screenFull()">full</button>
+            <button type="button" id="setcirculo" onclick="setCirculos()">set círculo</button>
+            <button type="button" id="resetcirculo" onclick="resetCirculos()">reset círculo</button>
+            <br>
+            <label for="brushSlider">Tamaño de brocha</label>
+            <input type="range"  id="slider" min="1" max="32" step="0.1" value="4">
+            <br>
+            <label for="sliderR">Nivel de  rojo</label>
+            <input type="range"  id="sliderR" min="1" max="255" step="1" value="150">
+            <br>
+            <label for="sliderR">Nivel de verde</label>
+            <input type="range"  id="sliderG" min="1" max="255" step="1" value="150">
+           
+            <br>
+            <label for="sliderR">Nivel de  azul</label>
+            <input type="range"  id="sliderB" min="1" max="255" step="1" value="150">
+            <br>
+            <label for="sliderR">Transparencia</label>
+            <input type="range"  id="sliderA" min="1" max="255" step="10" value="30">
+        </div>
+     <div class="footer">
+    <p>Para mayor información revisa mi cuenta de github 
+        <a href="https://github.com/Saraya-js?tab=repositories">acá</a></p>
+    
     </div>
 </body>
 </html>
