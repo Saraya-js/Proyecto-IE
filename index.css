@@ -30,7 +30,8 @@ div.principal{
      margin-left:240px ;
     font-size: 40px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color:#F7F7F7;
+    color: #252E5C;
+    /*color:#F7F7F7;*/
     text-decoration: underline;
    
  }
@@ -88,7 +89,7 @@ h2{
 }
 button {
     border: none;
-    color: blue;
+    color:#252E5C;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -102,7 +103,7 @@ button {
     width: 900px;
     height: 180px;
     padding: 20px;
-    background-color: antiquewhite;
+    background-color:#ECE370;
     border-width:5px;
     border-style: solid;
     border-color: black;
