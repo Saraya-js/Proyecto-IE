@@ -65,7 +65,7 @@ function setup() {
 
 // Función para guardar el archivo
 function saveFile() {
-  save('design.jpg');
+  save('design.svg');
 }
 
 // Función para limpiar la pantalla
